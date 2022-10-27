@@ -87,7 +87,7 @@ The Balanced Random Forest Classifier results returned an accuracy score of 75.4
 * Precision: The precision is low for High-risk loans and is high for Low-risk loans.
 * Recall: High/Low risk = 62%/88% (88% AVG)
 
-![](Images/balancedrandomforest.jpg)
+![](Images/balancedrandomforest_classifier.jpg)
 
 #### EasyEnsembleClassifier
 
