@@ -15,7 +15,7 @@ In this analysis, six different models were tested and compared against each oth
 * EasyEnsembleClassifier: The classifier is an ensemble of AdaBoost learners trained on different balanced boostrap samples. The balancing is achieved by random under-sampling (bias reduction model).
 * BalancedRandomForestClassifer: A balanced random forest randomly under-samples each boostrap sample to balance it (bias reduction model).
 * SMOTE: (Synthetic Minority Oversampling Technique), Addresses imbalanced datasets by oversampling the minority class. New examples are then synthesized from the existing examples
-* SMOTEENN: Combines the SMOTE ENN (Edited Nearest Neighbours) algorithms. The minority class is oversampled; however, an undersampling step is added, removing some of each class's outliers from the dataset. The result is that the two classes are separated more cleanly. 
+* SMOTEENN: Combines the SMOTE and ENN (Edited Nearest Neighbours) algorithms. The minority class is oversampled; however, an undersampling step is added, removing some of each class's outliers from the dataset. The result is that the two classes are separated more cleanly. 
 * RandomOverSampler: In random undersampling, randomly selected instances from the majority class are removed until the size of the majority class is reduced, typically to that of the minority class. The dataset used in this example contains information on credit card default.
 * ClusterCentroids: Cluster centroid undersampling is akin to SMOTE. The algorithm identifies clusters of the majority class, then generates synthetic data points, called centroids, that are representative of the clusters. The majority class is then under sampled down to the size of the minority class.
 
