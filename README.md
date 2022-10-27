@@ -2,9 +2,12 @@
  
 ## Evaluating the performance of machine learning models to determine the best model to predict credit risk with Python.
 
+![](Images/creditscoreimage.jpg)
+
 ### Project Overview
 
 Credit risk is the likelihood of a lender’s potential loss resulting from a borrower’s failure to repay a loan or meet a contractual obligation. It is calculated by subtracting liabilities from total assets and is managed in part by lenders using measurement tools to quantify these risks and mitigate potential loss.  Machine learning algorithms are used by lenders to leverage large datasets and reveal patterns, returning meaningful recommendations that determine borrowers’ risk.  
+
 The purpose of this project was to utilize statistic algorithms with supervised machine learning to predict data patterns, in this instance, to calculate credit risk. The data set from the LendingClub was used that’s data had an unbalanced classification problem, that is, the number of “good loans” outweighed the number of “risky loans”. To balance the classifications so meaningful predictions could be made, machine learning algorithms were used to resample the data and improve the accuracy score. 
 
 In this analysis, six different models were tested and compared against each other using a data set from 2019 provided by the LendingClub to uncover which model is the best at predicting credit risk. The algorithms used are outlined below: 
@@ -42,7 +45,8 @@ The balanced accuracy test returned 66%.
 * Precision: high risk has low positivity, low risk has high possibility. 
 * Recall – High/Low risk: 71%/60% (AVG 60%)
 
-PIC
+![](Images/naive_oversample_imbclassification.jpg)
+
 
 #### SMOTE (Synthetic Minority Oversampling Technique)
 
@@ -52,7 +56,8 @@ The accuracy score of the SMOTE oversampling test returned 66.2%.
 * Precision: high risk has low positivity; low risk has high possibility. 
 * Recall: High/Low risk = 63%/69% (AVG 69%)
 
-PIC
+![](Images/smote_oversample_imbclassification.jpg)
+
 
 #### ClusterCentroids
 
@@ -62,7 +67,7 @@ The undersampling results returned a balanced accuracy score of 66.2%.
 * Precision: The precision is low for High-risk loans and is high for Low-risk loans.
 * Recall: High/Low risk = 63%/40% (Avg 40%)
 
-PIC
+![](Images/undersampling_impclassification.jpg)
 
 #### SMOTEENN (Synthetic Minority Oversampling Technique + Edited NearestNeighbors)
 
@@ -72,7 +77,7 @@ The combination results returned a balanced accuracy score of 54.4%.
 * Precision: The precision is low for High-risk loans and is high for Low-risk loans.
 * Recall: High/Low risk = 72%/57% (AVG 57%)
 
-PIC
+![](Images/combination_underoversampling.jpg)
 
 #### BalancedRandomForestClassifer
 
@@ -82,7 +87,7 @@ The Balanced Random Forest Classifier results returned an accuracy score of 75.4
 * Precision: The precision is low for High-risk loans and is high for Low-risk loans.
 * Recall: High/Low risk = 62%/88% (88% AVG)
 
-PIC
+![](Images/balancedrandomforest.jpg)
 
 #### EasyEnsembleClassifier
 
@@ -92,23 +97,9 @@ The Easy Ensemble AdaBoost Classifier results returned an accuracy score of 93.1
 * Precision: The precision is low for High-risk loans and is high for Low-risk loans.
 * Recall: High/Low risk = 92%/94% (94% AVG)
 
-PIC
+![](Images/easyensembleADAboost.jpg)
 
 ### Conclusion
 
 Overall, the Easy Ensemble AdaBoost Classifier algorithm displayed the best balance of all the models tested due to it’s high accuracy score (93%) and good balance of precision and recall scores. All other algorithms tested returned accuracy scores less than 80%. The Easy Ensemble AdaBoost Classifier also returned the highest recall score, also known as the sensitivity rate, determining that it is the best machine learning model tested in this analysis. 
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
 
