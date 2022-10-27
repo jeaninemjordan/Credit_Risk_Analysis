@@ -65,7 +65,7 @@ The undersampling results returned a balanced accuracy score of 66.2%.
 
 * Balanced Accuracy: 0.6622479600626106
 * Precision: The precision is low for High-risk loans and is high for Low-risk loans.
-* Recall: High/Low risk = 63%/40% (Avg 40%)
+* Recall: High/Low risk = 69%/40% (Avg 40%)
 
 ![](Images/undersampling_impclassification.jpg)
 
